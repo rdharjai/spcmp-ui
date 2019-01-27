@@ -1,0 +1,186 @@
+
+@import "variables.less";
+
+@cta-font: sans-serif;
+@cta-font-size: 12px;
+@cta-font-weight: 800;
+@cta-text-color: #000000;
+
+@cta-border-radius: 20px;
+@cta-large-width: 250px;
+@cta-small-width: 150px;
+@cta-desktop-height: 45px;
+@cta-mobile-height: 30px;
+@cta-v-seprator: 20px;
+@cta-h-seprator: 20px;
+@cta-pad-left: 40px;
+@cta-pad-right: 40px;
+@cta-pad-top: 0px;
+@cta-pad-bottom: 0px;
+
+body{
+  background-color: @background-color;
+}
+
+/* for desktop breakpoint */
+.spcmp-cta-container {
+  .spcmp-cta-primary {
+    float: right;
+  }
+  .spcmp-cta-secondary {
+    float: right;
+  }
+  .spcmp-cta-seprator {
+    float:right;
+    display:block;
+    height: @cta-v-seprator;
+    width: @cta-h-seprator;
+  }
+  &::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+}
+
+.spcmp-cta {
+  font-family: @cta-font;
+  font-size: @cta-font-size;
+  font-weight: @cta-font-weight;
+  color: @cta-text-color;
+
+  &.spcmp-sprint-yellow {
+    background-color: @sprint-yellow;
+    border-color: @sprint-yellow;
+  }
+  &.spcmp-sprint-green {
+    background-color: @sprint-green;
+    border-color: @sprint-green;
+  }
+  &.spcmp-sprint-red {
+    background-color: @sprint-red;
+    border-color: @sprint-red;
+  }
+  &.spcmp-cta-large {
+    width: @cta-large-width;
+    height: @cta-desktop-height;
+    border-radius: @cta-border-radius;
+    padding: @cta-pad-top @cta-pad-right @cta-pad-bottom @cta-pad-left;
+  }
+  &.spcmp-cta-small {
+    width: @cta-small-width;
+    height: @cta-mobile-height;
+    border-radius: @cta-border-radius;
+    padding: @cta-pad-top @cta-pad-right @cta-pad-bottom @cta-pad-left;
+  }
+  &.spcmp-cta-link {
+    background: none!important;
+    border: none;
+    padding: 0!important;
+  }
+  &.spcmp-cta-solid {
+    border: none 0px;
+    &.spcmp-cta-hoover {
+        transition: border .1s linear;
+        &:hover {
+          border-width: 3px;
+        }
+    }
+  }
+  &.spcmp-cta-ghost {
+    border-style: solid;
+    border-width: 2px;
+    background: none;
+    &.spcmp-cta-hoover {
+        transition: border .1s linear;
+        &:hover {
+          border-width: 3px;
+        }
+    }
+  }
+}
+
+/* for tablet breakpoint */
+@media screen and (max-width: 1024px) {
+  .spcmp-cta-container {
+    .spcmp-cta-primary {
+      float: right;
+    }
+    .spcmp-cta-secondary {
+      float: right;
+    }
+    .spcmp-cta-seprator {
+      float:right;
+      display:block;
+      height: @cta-v-seprator;
+      width: @cta-h-seprator;
+    }
+    &::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+  }
+  .spcmp-cta {
+    &.spcmp-cta-large {
+      width: @cta-large-width;
+      height: @cta-mobile-height;
+      border-radius: @cta-border-radius;
+      padding: @cta-pad-top @cta-pad-right @cta-pad-bottom @cta-pad-left;
+    }
+    &.spcmp-cta-small {
+      width: @cta-small-width;
+      height: @cta-mobile-height;
+      border-radius: @cta-border-radius;
+      padding: @cta-pad-top @cta-pad-right @cta-pad-bottom @cta-pad-left;
+    }
+    &.spcmp-cta-link {
+      background: none!important;
+      border: none;
+      padding: 0!important;
+    }
+  }
+}
+
+/* for mobile breakpoint */
+@media screen and (max-width: 768px) {
+  .spcmp-cta-container {
+    text-align: center;
+    .spcmp-cta-primary {
+      float: none;
+    }
+    .spcmp-cta-secondary {
+      float: none;
+    }
+    .spcmp-cta-seprator {
+      float:none;
+      display:block;
+      height: @cta-v-seprator;
+      width: @cta-h-seprator;
+    }
+    &::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+  }
+  .spcmp-cta {
+    &.spcmp-cta-large {
+      width: @cta-large-width;
+      height: @cta-mobile-height;
+      border-radius: @cta-border-radius;
+      padding: @cta-pad-top @cta-pad-right @cta-pad-bottom @cta-pad-left;
+    }
+    &.spcmp-cta-small {
+      width: @cta-small-width;
+      height: @cta-mobile-height;
+      border-radius: @cta-border-radius;
+      padding: @cta-pad-top @cta-pad-right @cta-pad-bottom @cta-pad-left;
+    }
+    &.spcmp-cta-link {
+      background: none!important;
+      border: none;
+      padding: 0!important;
+    }
+  }
+}
