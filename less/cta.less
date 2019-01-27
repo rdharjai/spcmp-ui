@@ -18,6 +18,12 @@
 @cta-pad-top: 0px;
 @cta-pad-bottom: 0px;
 
+@cta-disabled-bgcolor: #CFCECE;
+@cta-disabled-txtcolor: #818181;
+@cta-link-default-normal: #0668E8;
+@cta-link-default-hover: #004198;
+
+
 body{
   background-color: @background-color;
 }
@@ -57,6 +63,18 @@ body{
     background-color: @sprint-green;
     border-color: @sprint-green;
   }
+  &.spcmp-sprint-white {
+    background-color: @sprint-white;
+    border-color: @sprint-white;
+  }
+  &.spcmp-cta-text-white {
+    color:@sprint-white;
+  }
+  &.spcmp-cta-diabled {
+    background-color: @cta-disabled-bgcolor;
+    border-color: @cta-disabled-bgcolor;
+    color: @cta-disabled-txtcolor;
+  }
   &.spcmp-sprint-red {
     background-color: @sprint-red;
     border-color: @sprint-red;
@@ -73,10 +91,27 @@ body{
     border-radius: @cta-border-radius;
     padding: @cta-pad-top @cta-pad-right @cta-pad-bottom @cta-pad-left;
   }
-  &.spcmp-cta-link {
+  &.spcmp-cta--link {
     background: none!important;
     border: none;
     padding: 0!important;
+  }
+  &.spcmp-cta--link-default {
+    color: @cta-link-default-normal;
+    &:hover{
+      text-decoration: underline;
+      color: @cta-link-default-hover;
+    }
+  }
+  &.spcmp-cta--link-white {
+    color: @sprint-white;
+    &:hover{
+      text-decoration: underline;
+      color: @sprint-white;
+    }
+  }
+  &.spcmp-cta--link-disabled {
+    color: @cta-disabled-txtcolor;
   }
   &.spcmp-cta-solid {
     border: none 0px;
@@ -91,7 +126,7 @@ body{
     border-style: solid;
     border-width: 2px;
     background: none;
-    &.spcmp-cta-hoover {
+    &.spcmp-cta-hover {
         transition: border .1s linear;
         &:hover {
           border-width: 3px;

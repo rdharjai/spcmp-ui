@@ -33,6 +33,18 @@ body {
   background-color: #00AA00;
   border-color: #00AA00;
 }
+.spcmp-cta.spcmp-sprint-white {
+  background-color: #FFFFFF;
+  border-color: #FFFFFF;
+}
+.spcmp-cta.spcmp-cta-text-white {
+  color: #FFFFFF;
+}
+.spcmp-cta.spcmp-cta-diabled {
+  background-color: #CFCECE;
+  border-color: #CFCECE;
+  color: #818181;
+}
 .spcmp-cta.spcmp-sprint-red {
   background-color: #E00000;
   border-color: #E00000;
@@ -49,10 +61,27 @@ body {
   border-radius: 20px;
   padding: 0px 40px 0px 40px;
 }
-.spcmp-cta.spcmp-cta-link {
+.spcmp-cta.spcmp-cta--link {
   background: none!important;
   border: none;
   padding: 0!important;
+}
+.spcmp-cta.spcmp-cta--link-default {
+  color: #0668E8;
+}
+.spcmp-cta.spcmp-cta--link-default:hover {
+  text-decoration: underline;
+  color: #004198;
+}
+.spcmp-cta.spcmp-cta--link-white {
+  color: #FFFFFF;
+}
+.spcmp-cta.spcmp-cta--link-white:hover {
+  text-decoration: underline;
+  color: #FFFFFF;
+}
+.spcmp-cta.spcmp-cta--link-disabled {
+  color: #818181;
 }
 .spcmp-cta.spcmp-cta-solid {
   border: none 0px;
@@ -68,10 +97,10 @@ body {
   border-width: 2px;
   background: none;
 }
-.spcmp-cta.spcmp-cta-ghost.spcmp-cta-hoover {
+.spcmp-cta.spcmp-cta-ghost.spcmp-cta-hover {
   transition: border 0.1s linear;
 }
-.spcmp-cta.spcmp-cta-ghost.spcmp-cta-hoover:hover {
+.spcmp-cta.spcmp-cta-ghost.spcmp-cta-hover:hover {
   border-width: 3px;
 }
 /* for tablet breakpoint */
