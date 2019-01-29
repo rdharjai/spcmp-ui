@@ -1,0 +1,153 @@
+body {
+  background-color: #FFFFFF;
+}
+/* ***************************** */
+/* ***** CTA: COLOR THEMES ***** */
+/* ***************************** */
+.spcmp-cta__default-color {
+  background-color: #CACACA;
+  border-color: #CACACA;
+  color: #000000;
+}
+.spcmp-cta__sprint-yellow {
+  background-color: #FFCE0A;
+  border-color: #FFCE0A;
+}
+.spcmp-cta__sprint-green {
+  background-color: #00AA00;
+  border-color: #00AA00;
+}
+.spcmp-cta__sprint-red {
+  background-color: #E00000;
+  border-color: #E00000;
+}
+.spcmp-cta__light-text {
+  color: #FFFFFF;
+}
+.spcmp-cta__dark-text {
+  color: #000000;
+}
+/* *********************************** */
+/* ***** CTA: DESKTOP BREAKPOINT ***** */
+/* *********************************** */
+/* CTA Desktop Placement */
+.spcmp-cta-container .spcmp-cta-primary {
+  float: right;
+}
+.spcmp-cta-container .spcmp-cta-secondary {
+  float: right;
+}
+.spcmp-cta-container .spcmp-cta-seprator {
+  float: right;
+  display: block;
+  height: 20px;
+  width: 20px;
+}
+.spcmp-cta-container::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+/* CTA Layout: Show Secondary Button */
+.spcmp-cta__hide-secondary .spcmp-cta-container .spcmp-cta-seprator {
+  displasy: none;
+}
+.spcmp-cta__hide-secondary .spcmp-cta-container .spcmp-cta-secondary {
+  display: none;
+}
+/* CTA Layout: Hide Secondary Button */
+.spcmp-cta__show-secondary .spcmp-cta-container .spcmp-cta-seprator {
+  displasy: inline;
+}
+.spcmp-cta__show-secondary .spcmp-cta-container .spcmp-cta-secondary {
+  display: inline;
+}
+/* CTA Base Style */
+.spcmp-cta-btn {
+  font-family: sans-serif;
+  font-size: 12px;
+  font-weight: 800;
+  text-decoration: none;
+}
+/* CTA - Large */
+.spcmp-cta__large .spcmp-cta-container .spcmp-cta .spcmp-cta-btn {
+  display: block;
+  width: 250px;
+  height: 45px;
+  line-height: 45px;
+  border-radius: 20px;
+  border-style: solid;
+  border-width: 1px;
+  text-align: center;
+}
+.spcmp-cta__large .spcmp-cta-container .spcmp-cta .spcmp-cta-btn span {
+  vertical-align: middle;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+/* CTA - Small */
+.spcmp-cta__small .spcmp-cta-container .spcmp-cta .spcmp-cta-btn {
+  display: block;
+  width: 150px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 20px;
+  border-style: solid;
+  border-width: 1px;
+  text-align: center;
+}
+.spcmp-cta__small .spcmp-cta-container .spcmp-cta .spcmp-cta-btn span {
+  vertical-align: middle;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+/* CTA - Link */
+.spcmp-cta__link .spcmp-cta-container .spcmp-cta .spcmp-cta-btn span {
+  color: #0668E8;
+}
+.spcmp-cta__link .spcmp-cta-container .spcmp-cta .spcmp-cta-btn span:hover {
+  text-decoration: underline;
+  color: #004198;
+}
+/* CTA - Primary Solid */
+.spcmp-cta__p-solid.spcmp-cta__large .spcmp-cta.spcmp-cta-primary .spcmp-cta-btn {
+  border: none;
+}
+.spcmp-cta__p-solid.spcmp-cta__small .spcmp-cta.spcmp-cta-primary .spcmp-cta-btn {
+  border: none;
+}
+/* CTA - Secondary Solid */
+.spcmp-cta__s-solid.spcmp-cta__large .spcmp-cta.spcmp-cta-secondary .spcmp-cta-btn {
+  border: none;
+}
+.spcmp-cta__s-solid.spcmp-cta__small .spcmp-cta.spcmp-cta-secondary .spcmp-cta-btn {
+  border: none;
+}
+/* CTA - Primary Ghost */
+.spcmp-cta__p-ghost.spcmp-cta__large .spcmp-cta.spcmp-cta-primary .spcmp-cta-btn {
+  background: none;
+  border-style: solid;
+  border-width: 2px;
+}
+.spcmp-cta__p-ghost.spcmp-cta__small .spcmp-cta.spcmp-cta-primary .spcmp-cta-btn {
+  background: none;
+  border-style: solid;
+  border-width: 2px;
+}
+/* CTA - Secondary Ghost */
+.spcmp-cta__s-ghost.spcmp-cta__large .spcmp-cta.spcmp-cta-secondary .spcmp-cta-btn {
+  background: none;
+  border-style: solid;
+  border-width: 2px;
+}
+.spcmp-cta__s-ghost.spcmp-cta__small .spcmp-cta.spcmp-cta-secondary .spcmp-cta-btn {
+  background: none;
+  border-style: solid;
+  border-width: 2px;
+}
+/* ********************************** */
+/* ***** CTA: TABLET BREAKPOINT ***** */
+/* ********************************** */
+/* ********************************** */
+/* ***** CTA: MOBILE BREAKPOINT ***** */
+/* ********************************** */

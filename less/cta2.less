@@ -1,0 +1,289 @@
+
+@import "variables.less";
+
+@cta-font: sans-serif;
+@cta-font-size: 12px;
+@cta-font-weight: 800;
+
+
+@cta-border-radius: 20px;
+@cta-large-width: 250px;
+@cta-small-width: 150px;
+@cta-desktop-height: 45px;
+@cta-mobile-height: 30px;
+@cta-v-seprator: 20px;
+@cta-h-seprator: 20px;
+@cta-pad-left: 40px;
+@cta-pad-right: 40px;
+@cta-pad-top: 0px;
+@cta-pad-bottom: 0px;
+
+@cta-default-bgcolor: #CACACA;
+@cta-default-bordercolor: #CACACA;
+@cta-default-txtcolor: #000000;
+@cta-disabled-bgcolor: #CFCECE;
+@cta-disabled-txtcolor: #818181;
+@cta-link-default-normal: #0668E8;
+@cta-link-default-hover: #004198;
+
+
+body{
+  background-color: @background-color;
+}
+
+/* ***************************** */
+/* ***** CTA: COLOR THEMES ***** */
+/* ***************************** */
+.spcmp-cta__default-color {
+  background-color: @cta-default-bgcolor;
+  border-color: @cta-default-bordercolor;
+  color: @cta-default-txtcolor;
+}
+
+.spcmp-cta__sprint-yellow {
+  background-color: @sprint-yellow;
+  border-color: @sprint-yellow;
+}
+
+.spcmp-cta__sprint-green {
+  background-color: @sprint-green;
+  border-color: @sprint-green;
+}
+
+.spcmp-cta__sprint-red {
+  background-color: @sprint-red;
+  border-color: @sprint-red;
+}
+
+.spcmp-cta__light-text {
+  color: #FFFFFF;
+}
+
+.spcmp-cta__dark-text {
+  color: #000000;
+}
+
+/* *********************************** */
+/* ***** CTA: DESKTOP BREAKPOINT ***** */
+/* *********************************** */
+
+/* CTA Desktop Placement */
+.spcmp-cta-container {
+  .spcmp-cta-primary {
+    float: right;
+  }
+  .spcmp-cta-secondary {
+    float: right;
+  }
+  .spcmp-cta-seprator {
+    float:right;
+    display:block;
+    height: @cta-v-seprator;
+    width: @cta-h-seprator;
+  }
+  &::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+}
+
+/* CTA Layout: Show Secondary Button */
+.spcmp-cta__hide-secondary {
+  & .spcmp-cta-container {
+    & .spcmp-cta-seprator {
+      displasy: none;
+    }
+    & .spcmp-cta-secondary {
+      display: none;
+    }
+  }
+}
+
+/* CTA Layout: Hide Secondary Button */
+.spcmp-cta__show-secondary {
+  & .spcmp-cta-container {
+    & .spcmp-cta-seprator {
+      displasy: inline;
+    }
+    & .spcmp-cta-secondary {
+      display: inline;
+    }
+  }
+}
+
+/* CTA Base Style */
+.spcmp-cta-btn {
+  font-family: @cta-font;
+  font-size: @cta-font-size;
+  font-weight: @cta-font-weight;
+  text-decoration: none;
+}
+
+/* CTA - Large */
+.spcmp-cta__large {
+  & .spcmp-cta-container {
+    & .spcmp-cta {
+      & .spcmp-cta-btn {
+        display: block;
+        width: @cta-large-width;
+        height: @cta-desktop-height;
+        line-height: @cta-desktop-height;
+        border-radius: @cta-border-radius;
+        border-style: solid;
+        border-width: 1px;
+        text-align: center;
+        & span {
+          vertical-align: middle;
+          padding-left: @cta-pad-left;
+          padding-right: @cta-pad-right;
+        }
+      }
+    }
+  }
+}
+
+/* CTA - Small */
+.spcmp-cta__small {
+  & .spcmp-cta-container {
+    & .spcmp-cta {
+      & .spcmp-cta-btn {
+        display: block;
+        width: @cta-small-width;
+        height: @cta-mobile-height;
+        line-height: @cta-mobile-height;
+        border-radius: @cta-border-radius;
+        border-style: solid;
+        border-width: 1px;
+        text-align: center;
+        & span {
+          vertical-align: middle;
+          padding-left: @cta-pad-left;
+          padding-right: @cta-pad-right;
+        }
+      }
+    }
+  }
+}
+
+/* CTA - Link */
+.spcmp-cta__link {
+  & .spcmp-cta-container {
+    & .spcmp-cta {
+      & .spcmp-cta-btn {
+        & span {
+          color: @cta-link-default-normal;
+          &:hover {
+            text-decoration: underline;
+            color: @cta-link-default-hover;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* CTA - Primary Solid */
+.spcmp-cta__p-solid {
+  &.spcmp-cta__large {
+    & .spcmp-cta {
+      &.spcmp-cta-primary {
+        & .spcmp-cta-btn {
+          border: none;
+        }
+      }
+    }
+  }
+  &.spcmp-cta__small {
+    & .spcmp-cta {
+      &.spcmp-cta-primary {
+        & .spcmp-cta-btn {
+          border: none;
+        }
+      }
+    }
+  }
+}
+
+/* CTA - Secondary Solid */
+.spcmp-cta__s-solid {
+  &.spcmp-cta__large {
+    & .spcmp-cta {
+      &.spcmp-cta-secondary {
+        & .spcmp-cta-btn {
+          border: none;
+        }
+      }
+    }
+  }
+  &.spcmp-cta__small {
+    & .spcmp-cta {
+      &.spcmp-cta-secondary {
+        & .spcmp-cta-btn {
+          border: none;
+        }
+      }
+    }
+  }
+}
+
+/* CTA - Primary Ghost */
+.spcmp-cta__p-ghost {
+  &.spcmp-cta__large {
+    & .spcmp-cta {
+      &.spcmp-cta-primary {
+        & .spcmp-cta-btn {
+          background: none;
+          border-style: solid;
+          border-width: 2px;
+        }
+      }
+    }
+  }
+  &.spcmp-cta__small {
+    & .spcmp-cta {
+      &.spcmp-cta-primary {
+        & .spcmp-cta-btn {
+          background: none;
+          border-style: solid;
+          border-width: 2px;
+        }
+      }
+    }
+  }
+}
+
+/* CTA - Secondary Ghost */
+.spcmp-cta__s-ghost {
+  &.spcmp-cta__large {
+    & .spcmp-cta {
+      &.spcmp-cta-secondary {
+        & .spcmp-cta-btn {
+          background: none;
+          border-style: solid;
+          border-width: 2px;
+        }
+      }
+    }
+  }
+  &.spcmp-cta__small {
+    & .spcmp-cta {
+      &.spcmp-cta-secondary {
+        & .spcmp-cta-btn {
+          background: none;
+          border-style: solid;
+          border-width: 2px;
+        }
+      }
+    }
+  }
+}
+
+/* ********************************** */
+/* ***** CTA: TABLET BREAKPOINT ***** */
+/* ********************************** */
+
+
+/* ********************************** */
+/* ***** CTA: MOBILE BREAKPOINT ***** */
+/* ********************************** */
