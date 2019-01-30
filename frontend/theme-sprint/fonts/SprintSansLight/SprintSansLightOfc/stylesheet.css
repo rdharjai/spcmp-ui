@@ -1,0 +1,16 @@
+@font-face {
+    font-family: 'Sprint Sans Ofc';
+    src: url('SprintSansOfcLight-Italic.woff2') format('woff2'),
+        url('SprintSansOfcLight-Italic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Sprint Sans Ofc';
+    src: url('SprintSansOfcLight-Regular.woff2') format('woff2'),
+        url('SprintSansOfcLight-Regular.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
