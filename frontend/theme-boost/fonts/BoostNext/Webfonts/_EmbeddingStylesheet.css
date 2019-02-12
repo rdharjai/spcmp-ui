@@ -1,0 +1,48 @@
+@font-face { font-family:'boost-next-black';
+	src:url('boost-next-black.eot'); 
+	src:url('boost-next-black.eot?#iefix') format('embedded-opentype'),
+		url('boost-next-black.woff') format('woff'),
+		url('boost-next-black.ttf') format('truetype'),
+		url('boost-next-black.svg#boost-next-black') format('svg');
+	font-weight: normal; font-style: normal;
+}
+@font-face { font-family:'boost-next-heavy';
+	src:url('boost-next-heavy.eot'); 
+	src:url('boost-next-heavy.eot?#iefix') format('embedded-opentype'),
+		url('boost-next-heavy.woff') format('woff'),
+		url('boost-next-heavy.ttf') format('truetype'),
+		url('boost-next-heavy.svg#boost-next-heavy') format('svg');
+	font-weight: normal; font-style: normal;
+}
+@font-face { font-family:'boost-next-bold';
+	src:url('boost-next-bold.eot'); 
+	src:url('boost-next-bold.eot?#iefix') format('embedded-opentype'),
+		url('boost-next-bold.woff') format('woff'),
+		url('boost-next-bold.ttf') format('truetype'),
+		url('boost-next-bold.svg#boost-next-bold') format('svg');
+	font-weight: normal; font-style: normal;
+}
+@font-face { font-family:'boost-next-regular';
+	src:url('boost-next-regular.eot'); 
+	src:url('boost-next-regular.eot?#iefix') format('embedded-opentype'),
+		url('boost-next-regular.woff') format('woff'),
+		url('boost-next-regular.ttf') format('truetype'),
+		url('boost-next-regular.svg#boost-next-regular') format('svg');
+	font-weight: normal; font-style: normal;
+}
+@font-face { font-family:'boost-next-light';
+	src:url('boost-next-light.eot'); 
+	src:url('boost-next-light.eot?#iefix') format('embedded-opentype'),
+		url('boost-next-light.woff') format('woff'),
+		url('boost-next-light.ttf') format('truetype'),
+		url('boost-next-light.svg#boost-next-light') format('svg');
+	font-weight: normal; font-style: normal;
+}
+@font-face { font-family:'boost-next-thin';
+	src:url('boost-next-thin.eot'); 
+	src:url('boost-next-thin.eot?#iefix') format('embedded-opentype'),
+		url('boost-next-thin.woff') format('woff'),
+		url('boost-next-thin.ttf') format('truetype'),
+		url('boost-next-thin.svg#boost-next-thin') format('svg');
+	font-weight: normal; font-style: normal;
+}
