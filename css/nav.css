@@ -1,0 +1,78 @@
+body {
+  margin: 0 auto;
+}
+.p-nav {
+  display: flex;
+  flex-direction: row;
+  height: 4em;
+  margin: 1em 1em 1em 1em;
+}
+.p-nav .p-nav__logo {
+  display: flex;
+  flex-grow: 1;
+}
+.p-nav .p-nav__logo .p-nav__logo-container {
+  align-self: center;
+  margin-left: 1em;
+}
+.p-nav .p-nav__icons {
+  display: flex;
+  justify-content: flex-end;
+  flex-grow: 10;
+}
+.p-nav .p-nav__icons .p-nav__icons-container {
+  align-self: center;
+}
+.p-nav .p-nav__icons .p-nav__icons-container ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+}
+.p-nav .p-nav__icons .p-nav__icons-container ul li {
+  margin-right: 2em;
+  display: flex;
+  flex-direction: column;
+}
+.p-nav .p-nav__icons .p-nav__icons-container ul li span {
+  text-align: center;
+}
+.p-nav .p-nav__menu {
+  display: flex;
+  justify-content: flex-start;
+  flex-grow: 1;
+}
+.p-nav .p-nav__menu .p-nav__menu-container {
+  align-self: center;
+  display: flex;
+  flex-direction: row;
+}
+.p-nav .p-nav__menu .p-nav__menu-container .p-nav__menu-v-separator {
+  height: 80%;
+  border-left: solid 1px #dcdedf;
+  align-self: center;
+}
+.p-nav .p-nav__menu .p-nav__menu-container .p-nav__menu-icon {
+  margin-left: 1em;
+  align-self: center;
+}
+.spcmp-search__container {
+  margin-left: 1em;
+  margin-right: 1em;
+  display: flex;
+  flex-direction: row;
+}
+.spcmp-search__container .spcmp-search__icon {
+  font-size: 1.25em;
+}
+.spcmp-search__container .spcmp-search__input .spcmp-search__input-element {
+  border: none;
+  width: 100%;
+  font-family: sans-serif;
+  font-size: 1.25em;
+}
+.spcmp-search__container .spcmp-search__input::before {
+  content: "<span class='menu__search_icon fa fa-search'></span>";
+}
+.state_closed {
+  display: none;
+}

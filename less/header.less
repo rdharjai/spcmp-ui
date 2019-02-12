@@ -1,0 +1,153 @@
+
+@u-nav-height: 2.5em; //40px;
+@p-nav-height: 6.0em; //95px;
+@mobile-header-height: 6.0em; //95px;
+@logo-container-height: 3.75em; //60px;
+@logo-container-width: 3.75em; //60px;
+@header-margin-left: 1em;
+@header-margin-right: 1em;
+@header-margin-action-items: 1em;
+
+
+@sprint-logo: '/images/sprint-logo.svg';
+@sprint-header-unav-bkg-color: #F4F4F4;
+@sprint-header-pnav-bkg-color: #FFFFFF;
+@sprint-header-separator-color: #CAC6C6;
+@sprint-font-family:SprintSansWeb,-apple-system,blinkmacsystemfont,Segoe UI,roboto,oxygen-sans,ubuntu,cantarell,Helvetica Neue,sans-serif;
+
+
+
+body {
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.spcmp-header {
+    font-family: @sprint-font-family;
+    border-bottom: solid 1px #cecfcf;
+
+    .spcmp-header__u-nav {
+        display: flex;
+        height: @u-nav-height;
+        background-color: @sprint-header-unav-bkg-color;
+        .spcmp-header__u-nav-container {
+            align-self: center;
+            margin-left: @header-margin-left;
+            margin-right: @header-margin-right;
+            .spcmp-header__u-nav__link-list {
+                font-size: 0.75em; //14px;
+            }
+        }
+    }
+    .spcmp-header__p-nav {
+        // border: solid 1px orange;
+        display: flex;
+        height: @p-nav-height;
+        background-color: @sprint-header-pnav-bkg-color;
+        .spcmp-header__p-nav-container {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin-left: @header-margin-left;
+            margin-right: @header-margin-right;
+            width: 100%;
+            .spcmp-header__p-nav__logo {
+                // border: solid 1px red;
+                .spcmp-header__p-nav__logo-image {
+                    width: @logo-container-width;
+                    height: @logo-container-height;
+                    background-image: url(@sprint-logo);
+                    background-size: cover;
+                }
+            }
+            .spcmp-header__p-nav__menu-container{
+                // border: solid 1px blue;
+                flex-grow: 1;
+                .spcmp-header__p-nav__menu {
+                    ul {
+                        list-style-type: none;
+                        margin: 0;
+                        padding: 0;
+                        display: flex;
+                        flex-direction: row;
+                        li {
+                            margin-left: 50px;
+                            a {
+                                color: #000000;
+                                font-family: @sprint-font-family;
+                                font-weight: 250;
+                                font-size: 20px;
+                                text-decoration: none;
+                            }
+                        }
+                    }
+                }
+            }
+            .spcmp-header__p-nav__action-bar {
+                // border: solid 1px green;
+                ul {
+                    list-style-type: none;
+                    margin: 0;
+                    padding: 0;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: flex-end;
+                    align-items: center;
+                    li {
+                        margin-left: 20px;
+                        text-align: center;
+                        a {
+                            text-align: center;
+                            text-decoration: none;
+                            img {
+                                margin: 0;
+                                max-height: 17px;
+                                max-width: 17px;
+                            }
+                            p {
+                                text-decoration: none;
+                                color: #000000;
+                                line-height: 20px;
+                                font-size: 12px;
+                                margin:0;
+                            }                            
+                        }
+                        hr {
+                            border: 0.03135rem solid @sprint-header-separator-color;
+                            height: 1.7rem;
+                        }                                                
+                    }
+                }
+            }            
+        }
+    }    
+}
+
+.desktop-hide {
+    display: none;
+}
+
+.desktop-show {
+    display: initial;
+}
+
+/* for tablet breakpoint */
+@media screen and (max-width: 1024px) {
+    .tablet-hide {
+        display: none;
+    }
+    .tablet-show {
+        display: initial;
+    }
+}
+
+/* for mobile breakpoint */
+@media screen and (max-width: 768px) {
+    .mobile-hide {
+        display: none;
+    }
+    .mobile-show {
+        display: initial;
+    }    
+}
